@@ -29,16 +29,14 @@ class PushFireBaseMessagingService : FirebaseMessagingService() {
         val body = remoteMessage.notification?.body
 
         handlerShowNotification(applicationContext,title,body)
-
     }
 
     private fun handlerShowNotification(context: Context,title: String?,message:String?) {
+
         val title = HtmlCompat.fromHtml(
             "<strong> $title </strong>",
             HtmlCompat.FROM_HTML_MODE_LEGACY
         )
-//        val description = "descricao da notificacao"
-//        val body = "corpo da notificacao"
 
         val notificationChannel: NotificationChannel
         val builder: NotificationCompat.Builder
@@ -62,7 +60,7 @@ class PushFireBaseMessagingService : FirebaseMessagingService() {
                 .setAutoCancel(true)
                 .setSmallIcon(R.drawable.baseline_email_24)
                 .setContentTitle(title)
-                .setContentText(message)
+                //.setContentText(message)
                 .setStyle(NotificationCompat.BigTextStyle()
                     .bigText(message)
                     .setSummaryText("Summary")
