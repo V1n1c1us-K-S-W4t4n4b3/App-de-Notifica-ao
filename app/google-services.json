@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "52729095242",
+    "project_id": "app-de-notificacao",
+    "storage_bucket": "app-de-notificacao.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52729095242:android:fadec71f3d666761ad72b3",
+        "android_client_info": {
+          "package_name": "com.kzdev.appnotification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcHzdWR9IlaHg8CEs5occ3cWodz3lxnEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
