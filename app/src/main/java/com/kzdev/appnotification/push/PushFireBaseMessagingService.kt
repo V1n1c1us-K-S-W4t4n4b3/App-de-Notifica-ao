@@ -5,7 +5,6 @@ import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
-import android.icu.text.CaseMap.Title
 import android.os.Build
 import android.util.Log
 import androidx.core.app.NotificationCompat
@@ -23,15 +22,15 @@ class PushFireBaseMessagingService : FirebaseMessagingService() {
         Log.i("Notification_APP", "Novo token recebido: $s")
     }
 
-    override fun onMessageReceived(remoteMessage: RemoteMessage){
+    override fun onMessageReceived(remoteMessage: RemoteMessage) {
         super.onMessageReceived(remoteMessage).toString()
         val title = remoteMessage.notification?.title
         val body = remoteMessage.notification?.body
 
-        handlerShowNotification(applicationContext,title,body)
+        handlerShowNotification(applicationContext, title, body)
     }
 
-    private fun handlerShowNotification(context: Context,title: String?,message:String?) {
+    private fun handlerShowNotification(context: Context, title: String?, message: String?) {
 
         val title = HtmlCompat.fromHtml(
             "<strong> $title </strong>",
@@ -61,10 +60,11 @@ class PushFireBaseMessagingService : FirebaseMessagingService() {
                 .setSmallIcon(R.drawable.baseline_email_24)
                 .setContentTitle(title)
                 //.setContentText(message)
-                .setStyle(NotificationCompat.BigTextStyle()
-                    .bigText(message)
-                    .setSummaryText("Summary")
-                    .setBigContentTitle("Big Text")
+                .setStyle(
+                    NotificationCompat.BigTextStyle()
+                        .bigText(message)
+                        .setSummaryText("Summary")
+                        .setBigContentTitle("Big Text")
                 )
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .setContentIntent(pendingIntent)
