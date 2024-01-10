@@ -43,6 +43,7 @@ dependencies {
     //fireBase
     implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
     implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-messaging:23.4.0")
 
     // biblioteca q facilita o pedido de permissao
     implementation("pub.devrel:easypermissions:3.0.0")
