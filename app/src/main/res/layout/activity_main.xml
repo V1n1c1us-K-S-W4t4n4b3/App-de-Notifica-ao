@@ -7,10 +7,14 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Ola Usuário, Aguarde alguns segundo para as notificações chegarem!"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

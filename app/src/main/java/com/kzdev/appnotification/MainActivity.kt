@@ -13,10 +13,16 @@ import androidx.core.text.HtmlCompat
 import com.kzdev.appnotification.databinding.ActivityMainBinding
 import kotlin.random.Random
 
-// Primeira parte do projeto é:
+// Primeira fase do projeto:
+
 // criar projeto
 // escolher metodo de mostrar a notificação
 // cria uma função que mostre a notificação
+
+
+// Segunda fase do projeto:
+
+
 
 class MainActivity : AppCompatActivity() {
 
