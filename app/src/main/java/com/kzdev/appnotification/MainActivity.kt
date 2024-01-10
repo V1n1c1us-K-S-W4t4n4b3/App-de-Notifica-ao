@@ -22,6 +22,9 @@ import kotlin.random.Random
 
 // Segunda fase do projeto:
 
+// inserir serviços no manifest
+// criar classe PushFireBaseMessagingService
+// alterar os metodos onMessageReceive e onNewToken
 
 
 class MainActivity : AppCompatActivity() {
